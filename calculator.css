@@ -1,0 +1,43 @@
+body{
+    width: 100%;
+    background-color: rgb(49, 45, 45);
+}
+.calculator{
+    height: 600px;
+    
+    border-radius: 10px;
+    background-color: rgb(61, 85, 85);
+}
+.calculator-title{
+    height: 10%;
+}
+.calculator-input{
+    height: 30%;
+    
+}
+.calculator-input input{
+    border: none;
+    text-align: end;
+    color: rgb(222, 209, 209);
+}
+.calculator-input input:focus-visible{
+    outline: 0px;
+}
+.calculator-button{
+    height: 60%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.calculator-button button{
+    width: 25%;
+    height: 20%;
+
+    border: 0px;
+    color: white;
+}
+.btn-light{
+    scale: 0.7;
+    font-weight: 500;
+    font-size: 25px;

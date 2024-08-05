@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  
+  <body class="d-flex flex-column justify-content-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-3 col-md-5">
+                <div class="calculator">
+                    <div class="calculator-title">
+                        <h5 class="display-6 p-2 text-white">Calculator</h5>
+
+                    </div>
+                    <div class="calculator-input d-flex flex-column justify-content-center">
+                        <input type="text" class="w-100 bg-transparent fs-1" name="" id="field">
+                        <input type="text" class="w-100 bg-transparent"  name="" id="answer">
+                  
+                    </div>
+                    <div class="calculator-button">
+                        <button class="btn" onclick="delAll();">AC</button>
+                        <button class="btn del" onclick="delValue();">Del</button>
+                        <button class="btn operation">%</button>
+                        <button class="btn btn-light rounded-circle btn-sm text-dark operation">/</button>
+                        <button class="btn num">7</button>
+                        <button class="btn num">8</button>
+                        <button class="btn num">9</button>
+                        <button class="btn btn-light rounded-circle btn-sm text-dark operation">*</button>
+                        <button class="btn num">4</button>
+                        <button class="btn num">5</button>
+                        <button class="btn num">6</button>
+                        <button class="btn btn-light rounded-circle btn-sm text-dark operation">-</button>
+                        <button class="btn num">1</button>
+                        <button class="btn num">2</button>
+                        <button class="btn num">3</button>
+                        <button class="btn btn-light rounded-circle btn-sm text-dark operation">+</button>
+                        <button  class="btn num">00</button>
+                        <button  class="btn num">0</button>
+                        <button  class="btn num">.</button>
+                        <button class="btn btn-light rounded-circle btn-sm text-dark " onclick="calculate();">=</button>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    
+  </body>
+  <script src="calculator.js"></script>
+</html>
+
+    
